@@ -8,7 +8,7 @@ export function Logo() {
       <Image
         src="/logo-dark.png"
         alt="ZOELA"
-        width={120}
+        width={200}
         height={40}
         className="h-8 w-auto"
         priority
