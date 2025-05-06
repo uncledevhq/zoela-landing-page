@@ -1,7 +1,6 @@
 import type React from "react";
 import "@/app/globals.css";
 import { Lato } from "next/font/google";
-import { ThemeProvider } from "@/components/theme-provider";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -20,17 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${lato.variable} font-sans`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
-      </body>
+    <html lang="en" className="dark">
+      <body className={`${lato.variable} font-sans bg-black`}>{children}</body>
     </html>
   );
 }

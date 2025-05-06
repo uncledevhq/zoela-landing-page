@@ -1,6 +1,5 @@
 import { HowDialog } from "@/components/how-dialog";
 import { Logo } from "@/components/logo";
-import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Header() {
   return (
@@ -9,7 +8,6 @@ export function Header() {
         <Logo />
 
         <div className="flex items-center gap-4">
-          <ThemeToggle />
           <HowDialog />
         </div>
       </div>
