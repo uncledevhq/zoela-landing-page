@@ -10,7 +10,7 @@ export default function Home() {
         className="flex-1 bg-cover bg-center relative text-white dark:text-white"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/images/port-background.jpg')",
+            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('/images/background-min.jpg')",
         }}
       >
         <Header />
@@ -18,14 +18,14 @@ export default function Home() {
         <div className="container mx-auto px-4 py-12 md:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
-              {/* <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2">
                 <div className="h-0.5 w-12 bg-white"></div>
                 <span className="uppercase tracking-wider text-sm font-medium">
                   Launching in
                 </span>
-              </div> */}
+              </div>
 
-              <Clock initialDays={90} />
+              <Clock initialDays={4} />
             </div>
 
             <div className="space-y-8">

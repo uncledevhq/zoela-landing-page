@@ -44,7 +44,7 @@ export function Clock({ initialDays }: ClockProps) {
         days
       </div>
 
-      <div className="flex ml-4 text-4xl font-bold">
+      {/* <div className="flex ml-4 text-4xl font-bold">
         <div className="flex flex-col items-center">
           <span>{hours < 10 ? `0${hours}` : hours}</span>
           <span className="text-sm font-normal">H</span>
@@ -63,7 +63,7 @@ export function Clock({ initialDays }: ClockProps) {
           <span>{seconds < 10 ? `0${seconds}` : seconds}</span>
           <span className="text-sm font-normal">S</span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
